@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Js-While Loop</title>
+</head>
+<body>
+    <h3>JavaScript While Loop</h3>
+
+    <p id="demo"></p>
+
+    <script>
+    const colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];
+    let i = 0;
+    let text = "";
+    while (colors[i]) {
+    text += colors[i] + "<br>";
+    i++;
+    }
+    
+    document.getElementById("demo").innerHTML = text;
+    </script> 
+    <hr>
+
+    <h3>JavaScript Do While Loop</h3>
+    <p id="demo1"></p>
+
+    <script>
+    const food_items = ["Burger", "Pizza", "Pasta", "French Fries"];
+    let x = 0;
+    let text1 = "";
+    
+    do {
+    text1 += food_items[x] + "<br>";
+    x++;
+    }
+    while (x < 5);  
+
+    document.getElementById("demo1").innerHTML = text1;
+    </script>
+
+</body>
+</html>

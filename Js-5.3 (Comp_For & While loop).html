@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comparing For & While Loop</title>
+</head>
+<body>
+    
+    <h2>Comparing For & While Loop</h2>
+    <h4>For Comparing Loop</h4>
+    <p id="demo"></p>
+
+    <script>
+    const vegetables = ["Carrot", "Cabbage", "Tomato", "Onion", "Potato", "Cauliflower", "Brinjal"];
+  
+    let i = 0;
+    let text = "";
+    for (;vegetables[i];) {
+      text += vegetables[i] + "<br>";
+      i++;
+    }
+  
+    document.getElementById("demo").innerHTML = text;
+    </script> <hr>  
+
+    <h4>While Comparing Loop</h4>
+
+    <p id="demo1"></p>
+
+    <script>
+    const fruits = ["Apple", "Banana", "Cherry", "Grapes", "Watermelon", "Kiwi", "Pineapple"];
+    
+    let x = 0;
+    let text1 = "";
+    while (fruits[x]) {
+      text1 += fruits[x] + "<br>";
+      x++;
+    }
+    
+    document.getElementById("demo1").innerHTML = text1;
+    
+    </script>
+    
+</body>
+</html>
