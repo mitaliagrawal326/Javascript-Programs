@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Js-variables</title>
+    <style>
+            button{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>There are three types of variables:</h1> 
+    <h3>1. <u>Using var</u></h3>
+    <p>In this example, a, b, and c are variables.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    var a = 6;
+    var b = 9;
+    var c = a + b;
+    document.getElementById("demo").innerHTML ="The value of c is: " + c;
+    </script> 
+    <hr>
+    
+    <h3>2. <u>Using let</u></h3>
+    <p>In this example, a, b, and c are variables.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+    let x = 9;
+    let y = 7;
+    let z = x - y;
+    document.getElementById("demo1").innerHTML ="The value of z is: " + z;
+    </script> 
+    <hr>
+
+    <h3>3. <u>Using const</u></h3>
+    <p>Numbers are written without quotes.</p>
+
+    <p id="para"></p>
+
+    <script>
+    const price1 = 8;
+    const price2 = 9;
+    let total = price1 + price2;
+    document.getElementById("para").innerHTML ="The total is: " + total;
+    </script> 
+    <hr>
+
+    <p>Strings are written with quotes.</p>
+
+    <p id="demo2"></p>
+
+    <script>
+    const pi = 3.14;
+    let person = "Mitali";
+    let answer = 'Yes I am..';
+
+    document.getElementById("demo2").innerHTML = pi + "<br>" + person + "<br>" + answer;
+    </script> 
+    <hr>
+
+    <p>You can declare many variables in one statement.</p>
+
+    <p id="demo4"></p>
+
+    <script>
+    let person1 = "Mitali",
+    carName = "Honda",
+    price = 200;
+    document.getElementById("demo4").innerHTML = person1;
+    </script> 
+    <hr>
+
+    <p>The result of adding "Himaira" + " " + "Agrawal" is:</p>
+    <p id="abc"></p>
+
+    <script>
+    let d = "John" + " " + "Doe";
+    document.getElementById("abc").innerHTML = d;
+    </script> 
+    <hr>
+
+    <h3>Arithmetic Javascript</h3>
+    <p>The result of adding "8" + 5 + 9 is:</p>
+    <p id="ab"></p>
+
+    <script>
+    let f = "8" + 5 + 9;
+    document.getElementById("ab").innerHTML = f;
+    </script> 
+
+    <p>The result of adding 1 + 5 + "6" is:</p>
+    <p id="cd"></p>
+
+    <script>
+    let p = 1 + 5 + "6";
+    document.getElementById("cd").innerHTML = p;
+    </script> 
+    <hr>
+
+    <h3>Variable Signs</h3>
+
+    <h4><u>Underscore Sign</u></h4>
+    <p>The underscore is treated as a letter in JavaScript names.</p>
+
+    <p id="hi"></p>
+
+    <script>
+    let _l = 8;
+    let _50 = 9;
+
+    document.getElementById("hi").innerHTML = _l + _50;
+    </script> 
+    <hr>
+
+    <h4><u>Dollar Sign</u></h4>
+
+    <p>The dollar sign is treated as a letter in JavaScript names.</p>
+
+    <p id="de"></p>
+
+    <script>
+    let $ = 8;
+    let $myMoney = 9;
+    document.getElementById("de").innerHTML = $ + $myMoney;
+    </script>  
+
+</body>
+</html>
