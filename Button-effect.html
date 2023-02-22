@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Effects Using Javacript</title>
+    <style>
+        button{
+            font-size: 20px;
+            padding:10px;
+            border:50px;
+            margin-left:10px;
+            border-radius:20px;
+            background:linear-gradient(powderblue, pink, violet);
+        }
+        #Image{
+            margin-left:30px;
+            margin-right:20px;
+        }
+    </style>
+</head>
+<body>
+   
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('Image').src='873b6bf31dd766ed876c9c3dcf794bc2.gif'">Start</button>
+
+<img id="Image" src="download.jpg" style="width:25%" height="25%">
+
+<button onclick="document.getElementById('Image').src='download.jpg'">Stop</button>
+
+</body>
+</html>
