@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js-strings</title>
+    </head>
+<body>
+
+<h3>JavaScript Strings</h3>
+<h4><u>The length Property</u></h4>
+
+<p>The length of the string is:</p>
+<p id="demo"></p>
+
+<script>
+let text = "Mitali Agrawal";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+<hr>
+
+<h4><u>The slice() Method</u></h4>
+
+<p>Extract a part of a string(with space after comma) from position 17:</p>
+<p id="demo1"></p>
+<p>Extract a part of a string(without space after comma) from position 5:</p>
+<p id="demo2"></p>
+
+<script>
+let text1 = "Palak, Heta, Khushi, Shivika";
+let part = text1.slice(17)
+let text2 = "Pineapple,Kiwi,Watermelon,Grapes";
+let part1 = text2.slice(5)
+document.getElementById("demo1").innerHTML = part;
+document.getElementById("demo2").innerHTML = part1;
+</script>
+</body>
+</html>
