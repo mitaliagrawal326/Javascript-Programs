@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Js-Functions</title>
+</head>
+<body>
+    <h1>JS Functions</h1>
+    <p>This example calls a function which performs a calculation, and returns the result:</p>
+    <p id="a"></p>
+
+    <script>
+    function myFunction(x, y) {
+    return x * y;
+    }
+    document.getElementById("a").innerHTML = myFunction(4, 3);
+    </script> 
+    <hr>
+
+    <p>This example calls a function which performs a calculation and returns the result:</p>
+    <p id="b"></p>
+
+    <script>
+    var x = myFunction1(4, 3);
+    document.getElementById("b").innerHTML = x;
+
+    function myFunction1(a, b) {
+    return a * b;
+    }
+    </script> 
+    <hr>
+
+    <p>This example calls a function to convert from Fahrenheit to Celsius:</p>
+    <p id="c"></p>
+
+    <script>
+    function toCelsius(f) {
+    return (5/9) * (f-32);
+    }
+    document.getElementById("c").innerHTML = toCelsius(77);
+    </script> 
+    <hr>
+
+    <p id="d"></p>
+
+    <script>
+    document.getElementById("d").innerHTML =
+    "The temperature is " + toCelsius(77) + " Celsius";
+
+    function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+    } 
+    </script> 
+    <hr>
+
+    <p>Outside myFunction() fruitName is undefined.</p>
+
+    <p id="e"></p>
+
+    <p id="f"></p>
+
+    <script>
+    myFunction();
+
+    function myFunction() {
+    let fruitName = "Pineapple";
+    document.getElementById("e").innerHTML =
+    typeof fruitName + " " + fruitName;
+    }
+
+    document.getElementById("f").innerHTML =
+    typeof fruitName;
+    </script>
+
+</body>
+</html>
